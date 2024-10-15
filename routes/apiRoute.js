@@ -4,8 +4,8 @@ const productController = require("../controllers/productController");
 const router = require("express").Router();
 
 // auth routes
-router.post("/login", authController.login);
-router.post("/signup", authController.signup);
+router.post("/auth/login", authController.login);
+router.post("/auth/signup", authController.signup);
 
 // product routes
 router.post("/product", productController.createProduct);
